@@ -1,6 +1,6 @@
 .img {
-  height: 600px;
-  width: 400px;
+  height: 700px;
+  width: 500px;
   display: block;
   object-fit: cover;
 }
@@ -18,9 +18,10 @@
   background-color: black;
   overflow: hidden;
   text-align: center;
+  padding: 0;
 }
 .desc {
-  width: 400px;
+  width: 500px;
 }
 .icon {
   fill: white;
