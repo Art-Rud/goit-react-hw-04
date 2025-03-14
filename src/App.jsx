@@ -35,7 +35,6 @@ function App() {
   };
   const onLoadMore = () => {
     SetPage(page + 1);
-    console.log(page);
   };
   useEffect(() => {
     if (search === "") {
