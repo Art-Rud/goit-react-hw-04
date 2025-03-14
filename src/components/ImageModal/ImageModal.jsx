@@ -38,7 +38,9 @@ function ImageModal({ image, modalIsOpen, closeModal }) {
               {image.description && (
                 <p className={style.desc}>{image.description.toUpperCase()}</p>
               )}
-              <p>{image.alt_description.toUpperCase()}</p>
+              <p className={style.desc}>
+                {image.alt_description.toUpperCase()}
+              </p>
             </div>
           </div>
         </Modal>
