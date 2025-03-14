@@ -5,12 +5,8 @@ function ImageGallery({ list, openModal }) {
     <>
       <ul className={style.list}>
         {list.map((item) => (
-          <li
-            className={style.item}
-            key={item.id}
-            onClick={() => openModal(item)}
-          >
-            <ImageCard item={item} />
+          <li className={style.item} key={item.id}>
+            <ImageCard item={item} openModal={openModal} />
           </li>
         ))}
       </ul>

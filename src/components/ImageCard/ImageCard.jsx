@@ -1,7 +1,11 @@
-function ImageCard({ item }) {
+function ImageCard({ item, openModal }) {
   return (
     <div>
-      <img src={item.urls.small} alt={item.alt_description} />
+      <img
+        onClick={() => openModal(item)}
+        src={item.urls.small}
+        alt={item.alt_description}
+      />
     </div>
   );
 }

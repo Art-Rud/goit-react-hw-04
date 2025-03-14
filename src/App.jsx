@@ -5,8 +5,8 @@ import fetchPhoto from "./request";
 import ImageGallery from "./components/ImageGallery/ImageGallery";
 import Loader from "./components/Loader/Loader";
 import ErrorMessage from "./components/ErrorMessage/ErrorMessage";
-import LoadMore from "./components/LoadMore/LoadMore";
 import ImageModal from "./components/ImageModal/ImageModal";
+import LoadMoreBtn from "./components/LoadMore/LoadMoreBtn";
 
 function App() {
   const [list, SetList] = useState([]);
@@ -63,7 +63,7 @@ function App() {
       <SearchBar onSearch={onSearch} />
       {err && <ErrorMessage />}
       <ImageGallery list={list} openModal={openModal} />
-      {more && <LoadMore load={onLoadMore} />}
+      {more && <LoadMoreBtn load={onLoadMore} />}
       {loader && <Loader />}
       <ImageModal
         modalIsOpen={modalIsOpen}
